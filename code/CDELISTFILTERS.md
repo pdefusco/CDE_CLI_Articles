@@ -1,4 +1,4 @@
-## Listing CDE Jobs and Job Runs with Filters
+## Filtering Jobs, Runs and Resources with Filters
 
 You can list all jobs and job runs.
 

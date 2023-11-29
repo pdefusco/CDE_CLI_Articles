@@ -236,3 +236,15 @@ Open Spark UI for respective run:
 ```
 % cde run ui --id 21815  
 ```
+
+You can delete single files from resources:
+
+```
+% cde resource delete-file --name myScripts --resource-path utils.py
+```
+
+You can delete the resource:
+
+```
+
+```

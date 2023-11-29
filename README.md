@@ -10,6 +10,10 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. Cloudera Community Article
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONS.md)
 
+* Helpful Filtering Examples:
+  1. Cloudera Community Article
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDELISTFILTERS.md)
+
 ## On CDE and the CLI
 
 CDE is the Cloudera Data Engineering Service, a containerized managed service for Cloudera Data Platform designed for Large Scale Batch Pipelines with Spark, Airflow and Iceberg. It allows you to submit batch jobs to auto-scaling virtual clusters. As a Cloud-Native service, CDE enables you to spend more time on your applications, and less time on infrastructure.

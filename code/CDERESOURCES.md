@@ -1,4 +1,4 @@
-## Working with CDE Resources
+## Working with CDE Files Resources
 
 Create a Files Resource:
 

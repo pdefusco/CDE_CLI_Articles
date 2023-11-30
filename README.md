@@ -3,15 +3,15 @@
 This repository outlines some useful Cloudera Data Engineering (CDE) CLI commands that can help you accellerate your work with Spark and Airflow. It holds the code and artifacts related to the following Cloudera Community Articles:
 
 * Working with CDE Resources:
-  1. Cloudera Community Article
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Working-with-CDE-Files-Resources/ta-p/379891)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDERESOURCES.md)
 
-* Working with CDE Sessions:
-  1. Cloudera Community Article
+* Working with Iceberg in CDE Sessions:
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Working-with-Iceberg-in-CDE-Spark-Sessions/ta-p/379892)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONSICEBERG.md)
 
-* Helpful Filtering Examples:
-  1. Cloudera Community Article
+* Helpful Monitoring Examples:
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Efficiently-Monitoring-Jobs-Runs-and-Resources-with-the-CDE/ta-p/379893)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDELISTFILTERS.md)
 
 ## On CDE and the CLI

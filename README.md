@@ -8,7 +8,7 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
 
 * Working with CDE Sessions:
   1. Cloudera Community Article
-  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONS.md)
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONSICEBERG.md)
 
 * Helpful Filtering Examples:
   1. Cloudera Community Article

@@ -246,5 +246,5 @@ You can delete single files from resources:
 You can delete the resource:
 
 ```
-
+% cde resource delete --name myScripts
 ```

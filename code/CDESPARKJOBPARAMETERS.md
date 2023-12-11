@@ -253,8 +253,8 @@ Example 2: Run the job with two CLI arguments and read properties file 2
 
 ```
 cde job run --name myPySparkJob\
-            --arg myValue\
-            --arg myParam\
+            --arg MY_DB\
+            --arg SALES_TABLE\
             --arg propertiesFile_2.conf
 ```
 

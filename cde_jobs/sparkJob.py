@@ -1,8 +1,5 @@
-from __future__ import print_function
-import os
 import sys
 from pyspark.sql import SparkSession
-from pyspark.sql.types import Row, StructField, StructType, StringType, IntegerType
 import configparser
 
 spark = SparkSession\
@@ -21,9 +18,9 @@ dbname = sys.argv[1]
 tablename = sys.argv[2]
 
 config = configparser.ConfigParser()
-config.read('/app/mount/{}.properties'.format(sys.argv[3]))
-property_1=config.get("general","property_1")
-property_2=config.get("general","property_2")
+config.read('/app/mount/{}.conf'.format(sys.argv[3]))
+property_3=config.get("general","property_3")
+property_4=config.get("general","property_4")
 
 def myFunction(dbname, tablename, property_1, property_2):
     print("DBNAME\n")
@@ -31,9 +28,9 @@ def myFunction(dbname, tablename, property_1, property_2):
     print("TABLNAME\n")
     print(tablename)
     print("PROPERTY1\n")
-    print(property_1)
+    print(property_3)
     print("PROPERTY2\n")
-    print(property_2)
+    print(property_4)
     print("COMPLETE!\n")
 
 # A list of Rows. Infer schema from the first row, create a DataFrame and print the schema

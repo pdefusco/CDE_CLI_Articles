@@ -222,8 +222,8 @@ cde resource create --name myProperties
 
 ```
 cde resource upload --name myProperties\
-                    --local-path cde_jobs/myPropertiesFile_1.properties\
-                    --local-path cde_jobs/myPropertiesFile_2.properties\
+                    --local-path cde_jobs/propertiesFile_1.conf\
+                    --local-path cde_jobs/propertiesFile_2.conf\
                     --local-path cde_jobs/sparkJob.py
 ```
 
@@ -246,7 +246,7 @@ Example 1: Run the job with two CLI arguments and read properties file 1
 cde job run --name myPySparkJob\
             --arg MY_DB\
             --arg CUSTOMER_TABLE\
-            --arg propertiesFile_1.properties
+            --arg propertiesFile_1.conf
 ```
 
 Example 2: Run the job with two CLI arguments and read properties file 2
@@ -255,7 +255,7 @@ Example 2: Run the job with two CLI arguments and read properties file 2
 cde job run --name myPySparkJob\
             --arg myValue\
             --arg myParam\
-            --arg propertiesFile_2.properties
+            --arg propertiesFile_2.conf
 ```
 
 Application code in sparkJob.py:

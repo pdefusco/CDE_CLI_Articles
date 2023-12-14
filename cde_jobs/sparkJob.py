@@ -18,11 +18,20 @@ dbname = sys.argv[1]
 tablename = sys.argv[2]
 
 config = configparser.ConfigParser()
-config.read('/app/mount/{}'.format(sys.argv[3]))
+config.read('/app/mount/{}.conf'.format(sys.argv[3]))
 property_3=config.get("general","property_3")
 property_4=config.get("general","property_4")
 
-def myFunction(dbname, tablename, property_3, property_4):
+
+import configparser
+
+config = configparser.ConfigParser()
+config.read('/app/mount/parameters.conf')
+data_lake_name=config.get("general","data_lake_name")
+data_path=config.get("general","data_path")
+username=config.get("general","username")
+
+def myFunction(dbname, tablename, property_1, property_2):
     print("DBNAME\n")
     print(dbname)
     print("TABLNAME\n")
@@ -35,4 +44,4 @@ def myFunction(dbname, tablename, property_3, property_4):
 
 # A list of Rows. Infer schema from the first row, create a DataFrame and print the schema
 
-myFunction(dbname, tablename, property_3, property_4)
+myFunction(dbname, tablename, property_1, property_2)

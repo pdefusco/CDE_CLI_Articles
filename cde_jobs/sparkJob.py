@@ -22,26 +22,17 @@ config.read('/app/mount/{}.conf'.format(sys.argv[3]))
 property_3=config.get("general","property_3")
 property_4=config.get("general","property_4")
 
-
-import configparser
-
-config = configparser.ConfigParser()
-config.read('/app/mount/parameters.conf')
-data_lake_name=config.get("general","data_lake_name")
-data_path=config.get("general","data_path")
-username=config.get("general","username")
-
 def myFunction(dbname, tablename, property_1, property_2):
     print("DBNAME\n")
     print(dbname)
     print("TABLNAME\n")
     print(tablename)
     print("PROPERTY1\n")
-    print(property_3)
+    print(property_1)
     print("PROPERTY2\n")
-    print(property_4)
+    print(property_2)
     print("COMPLETE!\n")
 
 # A list of Rows. Infer schema from the first row, create a DataFrame and print the schema
 
-myFunction(dbname, tablename, property_1, property_2)
+myFunction(dbname, tablename, property_3, property_4)

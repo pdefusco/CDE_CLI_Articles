@@ -43,7 +43,10 @@ cde job create --name myPySparkJob\
 ```
 
 ```
-cde job create --name myScalaJob --type spark --application-file myJar.jar --mount-1-resource myFilesResource
+cde job create --name myScalaJob \
+               --type spark \
+               --application-file myJar.jar \
+               --mount-1-resource myFilesResource
 ```
 
 The files can only be found by CDE if they are present in a Files resource. As shown above, the Files resource is then set with the ```--mount-N-resource``` flag. More on that in the end to end example section.
@@ -65,13 +68,17 @@ cde job create --name myPySparkJob\
 ```
 
 ```
-cde job run --name myPySparkJob --executor-cores 4 --driver-cores 2
+cde job run --name myPySparkJob \
+            --executor-cores 4 \
+            --driver-cores 2
 ```
 
 The above job will run with the following resource configurations:
 
 ```
---executor-cores 4 --executor-memory "2g" and --driver-cores 2
+--executor-cores 4
+--executor-memory "2g"
+--driver-cores 2
 ```
 
 

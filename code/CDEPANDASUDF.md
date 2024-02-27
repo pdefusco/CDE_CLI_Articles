@@ -67,7 +67,7 @@ cde resource upload --name myScripts --local-path cde_jobs/cde_udf_job.py
 ```
 
 ```
-cde job create --name myUdfJob --type spark --application-file cde_udf_job.py --mount-1-resource myScripts --mount-2-resource myPyEnv
+cde job create --name myUdfJob --type spark --application-file cde_udf_job.py --mount-1-resource myScripts --python-env-resource-name myPyEnv
 ```
 
 ```

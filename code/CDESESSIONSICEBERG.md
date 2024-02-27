@@ -75,11 +75,6 @@ Type in expressions to have them evaluated.
 Run some basic Spark SQL operations:
 
 ```
-from pyspark.sql.types import Row, StructField, StructType, StringType, IntegerType
-rows = [Row(name="John", age=19), Row(name="Smith", age=23), Row(name="Sarah", age=18)]
-some_df = spark.createDataFrame(rows)
-some_df.printSchema()
-
 >>> from pyspark.sql.types import Row, StructField, StructType, StringType, IntegerType
 
 >>> rows = [Row(name="John", age=19), Row(name="Smith", age=23), Row(name="Sarah", age=18)]

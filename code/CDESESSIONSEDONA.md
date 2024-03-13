@@ -4,6 +4,12 @@ A Cloudera Data Engineering (CDE) Session is an interactive short-lived developm
 
 You can use CDE Sessions in CDE Virtual Clusters of type "All Purpose - Tier 2". The following commands illustrate a basic Geospatial example with Apache Sedona.
 
+### Requirements
+
+* A CDE 1.20 Service in Public or Private Cloud (AWS, Azure, OCP, Cloudera ECS OK)
+* A CDE Virtual Cluster of type "All Purpose" with Spark 3.2 or above.
+* A working installation of the CDE CLI on your local machine. 
+
 ### Step by Step Guide
 
 Create the CDE Custom Runtime with Apache Sedona. Notice this image has already been built for you. You can therefore skip this step if you'd like.

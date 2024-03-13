@@ -95,3 +95,5 @@ Run a KNN Query:
 [Apache Sedona Documantion](https://sedona.apache.org/1.5.1/)
 [CDE CLI command syntax reference](https://docs.cloudera.com/data-engineering/cloud/cli-access/topics/cde-cli-reference.html)
 [CDE CLI Spark Flag reference](https://docs.cloudera.com/data-engineering/cloud/cli-access/topics/cde-cli-spark-flag-reference.html)
+[CDE Documentation](https://docs.cloudera.com/data-engineering/cloud/overview/topics/cde-service-overview.html)
+[CDE Sessions Documentation](https://docs.cloudera.com/data-engineering/cloud/sessions/topics/cde-create-sessions.html)

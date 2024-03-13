@@ -97,3 +97,4 @@ Run a KNN Query:
 [CDE CLI Spark Flag reference](https://docs.cloudera.com/data-engineering/cloud/cli-access/topics/cde-cli-spark-flag-reference.html)
 [CDE Documentation](https://docs.cloudera.com/data-engineering/cloud/overview/topics/cde-service-overview.html)
 [CDE Sessions Documentation](https://docs.cloudera.com/data-engineering/cloud/sessions/topics/cde-create-sessions.html)
+[Spark Geospatial in CDE with Apache Sedona](https://community.cloudera.com/t5/Community-Articles/Spark-Geospatial-with-Apache-Sedona-in-Cloudera-Data/ta-p/378086)

@@ -6,7 +6,7 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Working-with-CDE-Files-Resources/ta-p/379891)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDERESOURCES.md)
 
-* Working with Iceberg in CDE Sessions:
+* Working with Apache Iceberg in CDE Sessions:
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Working-with-Iceberg-in-CDE-Spark-Sessions/ta-p/379892)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONSICEBERG.md)
 
@@ -19,8 +19,12 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKJOBPARAMETERS.md)
 
 * Working with the Hadoop API in CDE
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Cloud-Storage-File-System-Operations-with-the-Hadoop-API-in/ta-p/384213)
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDEHADOOPAPI.md)
+
+* Working with Apache Sedona in CDE Sessions:
   1. [Cloudera Community Article](WIP)
-  2. [Code](LINK)
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONSEDONA.md)
 
 * Working with Pandas UDFs in Cloudera Data Engineering:
   1. [Cloudera Community Article] Coming Soon...

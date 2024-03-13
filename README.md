@@ -18,18 +18,22 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Working-with-CDE-Spark-Job-Parameters-in-Cloudera-Data/ta-p/380792)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKJOBPARAMETERS.md)
 
+* Working with the Hadoop API in CDE
+  1. [Cloudera Community Article](WIP)
+  2. [Code](LINK)
+
 * Working with Pandas UDFs in Cloudera Data Engineering:
-1. [Cloudera Community Article] Coming Soon...
-2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKJOBPARAMETERS.md)
+  1. [Cloudera Community Article] Coming Soon...
+  2. [Code](WIP)
 
 
 ## On CDE and the CLI
 
-CDE is the Cloudera Data Engineering Service, a containerized managed service for Cloudera Data Platform designed for Large Scale Batch Pipelines with Spark, Airflow and Iceberg. It allows you to submit batch jobs to auto-scaling virtual clusters. As a Cloud-Native service, CDE enables you to spend more time on your applications, and less time on infrastructure.
+CDE is the Cloudera Data Engineering Service, a containerized managed service for Cloudera Data Platform designed for Large Scale Batch and Streaming Pipelines with Spark, Airflow and Iceberg. It allows you to submit batch jobs to auto-scaling virtual clusters. As a Cloud-Native service, CDE enables you to spend more time on your applications, and less time on infrastructure.
 
 CDE allows you to create, manage, and schedule Apache Spark jobs without the overhead of creating and maintaining Spark clusters. With CDE, you define virtual clusters with a range of CPU and memory resources, and the cluster scales up and down as needed to run your Spark workloads, helping to control your cloud costs.
 
-Cloudera Data Engineering (CDE) provides a command line interface (CLI) client. You can use the CLI to create and update jobs, view job details, manage job resources, run jobs, and so on.
+CDE provides a command line interface (CLI) client. You can use the CLI to create and update jobs, view job details, manage job resources, run jobs, etc.
 
 ## Requirements
 

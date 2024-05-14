@@ -8,7 +8,7 @@ You can use CDE Sessions in CDE Virtual Clusters of type "All Purpose - Tier 2".
 
 * A CDE 1.20 Service in Public or Private Cloud (AWS, Azure, OCP, Cloudera ECS OK)
 * A CDE Virtual Cluster of type "All Purpose" with Spark 3.2 or above.
-* A working installation of the CDE CLI on your local machine. 
+* A working installation of the CDE CLI on your local machine.
 
 ### Step by Step Guide
 
@@ -27,7 +27,7 @@ Create CDE Docker Resource for the Custom Runtime in CDE:
 ```
 cde credential create --name docker-creds-pauldefusco --type docker-basic --docker-server hub.docker.com --docker-username pauldefusco
 
-cde resource create --name dex-spark-runtime-sedona-geospatial-pauldefusco --image pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 --image-engine spark3 --type custom-runtime-image
+cde resource create --name dex-spark-runtime-sedona-geospatial-pauldefusco --image pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 --image-engine spark3 --type custom-runtime-image --type pyspark
 ```
 
 Create CDE Files Resource and load geospatial file:
@@ -36,18 +36,36 @@ Create CDE Files Resource and load geospatial file:
 cde resource create --name geospatial-data --type files
 
 cde resource upload --name geospatial-data --local-path geospatial_data/usa-county.tsv
+ 4.2MB/4.2MB 100% [==============================================] usa-county.tsv
 ```
 
 Create the Session:
 
 ```
-cde session create --name geospatial-data-analysis --runtime-image-resource-name dex-spark-runtime-sedona-geospatial-pauldefusco
+% cde session create --name geospatial-analysis --runtime-image-resource-name dex-spark-runtime-sedona-geospatial-pauldefusco --type pyspark
+{
+  "name": "geospatial-analysis",
+  "type": "pyspark",
+  "creator": "pauldefusco",
+  "created": "2024-03-25T20:52:18Z",
+  "lastStateUpdated": "2024-03-25T20:52:18Z",
+  "state": "starting",
+  "interactiveSpark": {
+    "id": 7,
+    "driverCores": 1,
+    "executorCores": 1,
+    "driverMemory": "1g",
+    "executorMemory": "1g",
+    "numExecutors": 1
+  },
+  "runtimeImageResourceName": "dex-spark-runtime-sedona-geospatial-pauldefusco"
+}
 ```
 
 Now interact with the session from your local terminal:
 
 ```
-cde session interact --name geospatial-data-analysis --type spark-scala
+cde session interact --name geospatial-analysis
 ```
 
 You are now running the Spark Shell. The rest of this example is based on the [Sedona Documentation Quickstart](https://sedona.apache.org/1.5.1/tutorial/sql/)

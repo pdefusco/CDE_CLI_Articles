@@ -76,7 +76,7 @@ Type in expressions to have them evaluated.
 >>>
 ```
 
-Import the PyYaml Pyhthon module:
+Import the PyYaml Python module:
 
 ```
 >>> import yaml

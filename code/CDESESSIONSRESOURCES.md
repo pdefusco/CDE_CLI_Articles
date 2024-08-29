@@ -12,7 +12,7 @@ Create the CDE Files resource and load a yaml file to it.
 ```
 %cde resource create --type files --name myYamlFiles
 
-%cde resource upload --name myYamlFiles --local-path cdesessionsresources/myyaml.yaml
+%cde resource upload --name myYamlFiles --local-path cdesessionsresources/sample.yaml
 ```
 
 Create a CDE Python resource and activate the environment.

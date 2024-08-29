@@ -27,7 +27,7 @@ cde resource upload --name files --local-path jars/read_xml.py --local-path jars
 
 cde job create --name sparkxml --application-file read_xml.py --mount-1-resource files --type spark
 
-cde job run --name sparkxml
+cde job run --name sparkxml --jar /app/mount/spark-xml_2.12-0.16.0.jar
 ```
 
 

@@ -130,7 +130,7 @@ Similar to example 1, you can reference JARs directly uploaded into CDE Files Re
 
 The following commands pick up from example 2 but replace the ```packages``` option with the ```jars``` option.
 
-Notice that the ```--jars``` option is being in the ```cde job run``` command rather than the ```cde job create```. The ```---jars``` option can either be set at CDE Job creation or runtime.
+Notice that the ```--jars``` option is used in the ```cde job run``` command rather than the ```cde job create```. The ```---jars``` option can either be set at CDE Job creation or runtime.
 
 ```
 cde resource create --name spark_xml_jar --type files

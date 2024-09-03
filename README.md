@@ -34,7 +34,7 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Using-CDE-Resources-in-CDE-Sessions/ta-p/387834)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESESSIONSRESOURCES.md)
 
-* Using Jars in CDE Jobs & Sessions:
+* Using Jars in CDE Jobs:
   1. [Cloudera Community Article]()
   2. [Code]()
 

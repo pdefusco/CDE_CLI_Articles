@@ -15,27 +15,27 @@ You can use CDE Sessions in CDE Virtual Clusters of type "All Purpose - Tier 2".
 Create the CDE Custom Runtime with Apache Sedona. Notice this image has already been built for you. You can therefore skip this step if you'd like.
 
 ```
-docker build --network=host -t pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-002 . -f Dockerfile
+% docker build --network=host -t pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-002 . -f Dockerfile
 
-docker run -it pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 . -f Dockerfile /bin/bash
+% docker run -it pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 . -f Dockerfile /bin/bash
 
-docker push pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003
+% docker push pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003
 ```
 
 Create CDE Docker Resource for the Custom Runtime in CDE:
 
 ```
-cde credential create --name docker-creds-pauldefusco --type docker-basic --docker-server hub.docker.com --docker-username pauldefusco
+% cde credential create --name docker-creds-pauldefusco --type docker-basic --docker-server hub.docker.com --docker-username pauldefusco
 
-cde resource create --name dex-spark-runtime-sedona-geospatial-pauldefusco --image pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 --image-engine spark3 --type custom-runtime-image --type pyspark
+% cde resource create --name dex-spark-runtime-sedona-geospatial-pauldefusco --image pauldefusco/dex-spark-runtime-3.2.3-7.2.15.8:1.20.0-b15-sedona-geospatial-003 --image-engine spark3 --type custom-runtime-image --type pyspark
 ```
 
 Create CDE Files Resource and load geospatial file:
 
 ```
-cde resource create --name geospatial-data --type files
+% cde resource create --name geospatial-data --type files
 
-cde resource upload --name geospatial-data --local-path geospatial_data/usa-county.tsv
+% cde resource upload --name geospatial-data --local-path geospatial_data/usa-county.tsv
  4.2MB/4.2MB 100% [==============================================] usa-county.tsv
 ```
 
@@ -65,7 +65,7 @@ Create the Session:
 Now interact with the session from your local terminal:
 
 ```
-cde session interact --name geospatial-analysis
+% cde session interact --name geospatial-analysis
 ```
 
 You are now running the Spark Shell. The rest of this example is based on the [Sedona Documentation Quickstart](https://sedona.apache.org/1.5.1/tutorial/sql/)

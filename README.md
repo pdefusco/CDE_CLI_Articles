@@ -44,7 +44,7 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
 
 * Using Spark-Connect in CDE Sessions:
   1. [Cloudera Community Article]()
-  2. [Code]()
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKCONNECT.md)
 
 ## On CDE and the CLI
 

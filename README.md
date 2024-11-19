@@ -38,6 +38,13 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Simplify-Spark-Submit-JAR-Dependency-Management-with/ta-p/393014)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDEUSINGJARS.md)
 
+* Working with Spark NLP in CDE Sessions:
+  1. [Cloudera Community Article]()
+  2. [Code]()
+
+* Using Spark-Connect in CDE Sessions:
+  1. [Cloudera Community Article]()
+  2. [Code]()
 
 ## On CDE and the CLI
 

@@ -22,23 +22,23 @@ Log in your GitHub account and create a private GitHub repository. Save the repo
 https://github.com/pdefusco/sample_private_repo.git
 ```
 
-![alt text](../../img/sample-private-repo-1.png)
+![alt text](../img/sample-private-repo-1.png)
 
-![alt text](../../img/sample-private-repo-2.png)
+![alt text](../img/sample-private-repo-2.png)
 
-![alt text](../../img/sample-private-repo-3.png)
+![alt text](../img/sample-private-repo-3.png)
 
 #### CREATE GITHUB TOKEN
 
 In the Developer Settings, create a new Classic Token.
 
-![alt text](../../img/git-token-1.png)
+![alt text](../img/git-token-1.png)
 
-![alt text](../../img/git-token-2.png)
+![alt text](../img/git-token-2.png)
 
-![alt text](../../img/git-token-3.png)
+![alt text](../img/git-token-3.png)
 
-![alt text](../../img/git-token-4.png)
+![alt text](../img/git-token-4.png)
 
 Keep the token ready for use.
 
@@ -126,7 +126,7 @@ Validate the repository via the CLI:
 
 Validate the repository in the UI:
 
-![alt text](../../img/repo-ui.png)
+![alt text](../img/repo-ui.png)
 
 ## Summary
 

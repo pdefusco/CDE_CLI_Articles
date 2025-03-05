@@ -40,7 +40,7 @@ In the Developer Settings, create a new Classic Token.
 
 ![alt text](../img/git-token-4.png)
 
-Keep the token ready for use.
+Keep the token handy.
 
 #### CREATE CDE CREDENTIALS
 

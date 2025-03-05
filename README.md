@@ -47,7 +47,7 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKCONNECT.md)
 
 * Creating a CDE Repository with a Private Git repository.
-  1. [Cloudera Community Article]()
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/CREATING-A-CDE-REPOSITORY-WITH-A-PRIVATE-GIT-REPOSITORY/ta-p/403540)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDEPRIVATEREPO.md)
 
 ## On CDE and the CLI

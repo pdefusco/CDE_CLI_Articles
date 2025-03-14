@@ -67,6 +67,8 @@ CDE Job with PySpark application:
 ```
 cde job create \
   --application-file s3://your-bucket/path/to/pyspark_app.py \
+  --conf spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
+  --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
   --py-files s3://your-bucket/path/to/dependency_one.zip, s3://your-bucket/path/to/dependency_two.py \
   --jars s3://default-cdp-bucket/path/to/dependency_one.jar,s3://your-bucket/path/to/dependency_two.jar \
   --arg1 value_one
@@ -90,6 +92,8 @@ CDE Job with Scala application:
 cde job create \
   --application-file s3://your-bucket/path/to/spark_app.jar \
   --py-files s3://your-bucket/path/to/dependency_one.zip, s3://your-bucket/path/to/dependency_two.py \
+  --conf spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
+  --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
   --jars s3://default-cdp-bucket/path/to/dependency_one.jar,s3://your-bucket/path/to/dependency_two.jar \
   --arg1 value_one
 ```

@@ -83,7 +83,7 @@ cde spark submit \
   --executor-memory 2g \
   --conf spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
   --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
-  s3://default-cdp-bucket/data-eng-artifacts/cde_spark_jobs/simple-pyspark-sql.py
+  s3://default-cdp-bucket/data-eng-artifacts/cde_spark_jobs/cde-scala-example_2.12-0.1.jar
 ```
 
 CDE Job with Scala application:
@@ -142,7 +142,7 @@ cde spark submit \
   --executor-memory 2g \
   --conf spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
   --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
-  s3://pdf-3425-buk-c59557bd/data-eng-artifacts/cde_spark_jobs/cdejobjar_2.12-1.0.jar
+  s3://pdf-3425-buk-c59557bd/data-eng-artifacts/cde_spark_jobs/cde-scala-example_2.12-0.1.jar
 ```
 
 ```
@@ -151,7 +151,7 @@ cde job create \
   --type spark \
   --conf spark.hadoop.fs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
   --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem \
-  --application-file s3://data-eng-artifacts/cde_spark_jobs/cdejobjar_2.12-1.0.jar \
+  --application-file s3://data-eng-artifacts/cde_spark_jobs/cde-scala-example_2.12-0.1.jar \
   --conf spark.sql.shuffle.partitions=10 \
   --executor-cores 2 \
   --executor-memory 2g

@@ -24,13 +24,13 @@ In this example you will build a CDE Spark Job with a Scala application that has
 ```
 cde resource create --name cde_scala_job_files
 
-cde resource upload --name cde_scala_job_files --local-path jars/cdejobjar_2.12-1.0.jar
+cde resource upload --name cde_scala_job_files --local-path jars/cde-scala-example_2.12-0.1.jar
 
 cde job create \
   --name cde-scala-job \
   --type spark \
   --mount-1-resource cde_scala_job_files \
-  --application-file cdejobjar_2.12-1.0.jar \
+  --application-file cde-scala-example_2.12-0.1.jar \
   --conf spark.sql.shuffle.partitions=10 \
   --executor-cores 2 \
   --executor-memory 2g

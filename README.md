@@ -46,9 +46,13 @@ This repository outlines some useful Cloudera Data Engineering (CDE) CLI command
   1. [Cloudera Community Article]()
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDESPARKCONNECT.md)
 
-* Creating a CDE Repository with a Private Git repository.
+* Creating a CDE Repository with a Private Git repository:
   1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/CREATING-A-CDE-REPOSITORY-WITH-A-PRIVATE-GIT-REPOSITORY/ta-p/403540)
   2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDEPRIVATEREPO.md)
+
+* Creating a CDE Job with Spark Application Code located in S3:
+  1. [Cloudera Community Article](https://community.cloudera.com/t5/Community-Articles/Creating-a-CDE-Job-with-Spark-Application-Code-located-in-S3/ta-p/404160)
+  2. [Code](https://github.com/pdefusco/CDE_CLI_Articles/blob/main/code/CDEJOBURLJAR.md)
 
 ## On CDE and the CLI
 

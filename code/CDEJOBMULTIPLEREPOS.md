@@ -57,9 +57,7 @@ cde job create \
   --type spark \
   --mount-1-resource app_code_repo \
   --mount-2-resource function_repo \
-  --application-file app_code.py \
-  --max-executors 4 \
-  --executor-cores 2
+  --application-file app_code.py
 ```
 
 Run the Job:

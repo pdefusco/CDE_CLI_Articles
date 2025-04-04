@@ -18,6 +18,7 @@ The following are required in order to reproduce these commands in your CDE envi
 
 * A CDE Service on version 1.23.
 * A working installation of the CDE CLI. Please follow [these instructions](https://docs.cloudera.com/data-engineering/cloud/cli-access/topics/cde-cli.html) to install the CLI.
+* A working git installation. The two sample git repositories referenced in the CLI commands below have already been created and can be reused.  
 
 ## Code
 

@@ -18,7 +18,7 @@ dbname = sys.argv[1]
 tablename = sys.argv[2]
 
 config = configparser.ConfigParser()
-config.read('/app/mount/{}.conf'.format(sys.argv[3]))
+config.read('/app/mount/{}'.format(sys.argv[3]))
 property_3=config.get("general","property_3")
 property_4=config.get("general","property_4")
 
